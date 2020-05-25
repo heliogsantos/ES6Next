@@ -17,7 +17,7 @@ const numbers = [1,2,3,4,5,6];
 
 const biggerSix = numbers.map(item => item * 2).filter(item => item > 6);
 
-export const logArrowFunction = () => console.log(biggerSix) // [8, 10, 12] 🧐
+export const logArrowFunction = () => console.log(biggerSix); // [8, 10, 12] 🧐
 ```
 
 ## Destructuring (ES6) 🔥
@@ -36,19 +36,14 @@ const address = {
 const { street, number, uf_address: { uf } } = address;
 
 const logDestructuringObject = () => {
-    console.log(street) // Boa Vista 🧐
-    console.log(number) // 301 🧐
-    console.log(uf) // SP 🧐
+    console.log(street, number, uf); // Boa Vista 301 SP 🧐
 }
-
 
 const numbers = [1,2,3];
 const [ one, two, three ] = numbers;
 
 const logDestructuringArry = () => {
-    console.log(one) // 1 🧐
-    console.log(two) // 2 🧐
-    console.log(three) // 3 🧐
+    console.log(one, two, three); // 1 2 3 🧐
 }
 
 export { logDestructuringObject, logDestructuringArry }
@@ -66,7 +61,7 @@ const printAge = (param) => {
     return `${param} anos!`;
 }
 
-console.log(` Seu nome é ${name} e Você tem ${printAge(age)}`); // Seu nome é Helio e Você tem: 29 anos!; 🧐
+console.log(` Seu nome é ${name} e Você tem ${printAge(age)}`); // Seu nome é Helio e Você tem: 29 anos! 🧐
 
 export const logTemplateString = () => console.log(` Seu nome é ${name} e Você tem ${printAge(age)}`);
 ```
@@ -79,7 +74,7 @@ A sintaxe de rest parameter  **(parâmetros rest)**  nos permite representar um 
 ```javascript
 const numbers = [1,2,3,4,5,6];
 
-const sumNumbers = (...param) => console.log(param.length) // 6 🧐
+const sumNumbers = (...param) => console.log(param.length); // 6 🧐
 
 export const logRest = () => sumNumbers(numbers);
 ```
@@ -93,7 +88,7 @@ const css = { fontSize: 13, color: "#FFF" };
 
 const titleCss = { fontweight: 'bold', ...css };
 
-console.log(titleCss) // fontweight: "bold", fontSize: 13, color: "#FFF" 🧐
+console.log(titleCss); // fontweight: "bold", fontSize: 13, color: "#FFF" 🧐
 
 export const logSpread = () => console.log(titleCss);
 ```
