@@ -6,7 +6,7 @@
 
 Para mais detalhes [MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript).
 
-## Arrow function (ES6)
+## Arrow function (ES6)  🔥
 
 Uma expressão arrow function possui uma sintaxe mais curta quando comparada a uma expressão de função  **(function expression)** 
 e não tem seu próprio this, arguments, super ou new.target. Estas expressões de funções são melhor aplicadas para funções que não sejam métodos, 
@@ -20,7 +20,7 @@ const biggerSix = numbers.map(item => item * 2).filter(item => item > 6);
 export const logArrowFunction = () => console.log(biggerSix) // [8, 10, 12];
 ```
 
-## Destructuring (ES6)
+## Destructuring (ES6)  🔥
 
 A sintaxe de atribuição via desestruturação  **(destructuring assignment)** é uma expressão JavaScript que possibilita extrair dados de arrays ou objetos em variáveis distintas.
 
@@ -54,7 +54,7 @@ const logDestructuringArry = () => {
 export { logDestructuringObject, logDestructuringArry }
 ```
 
-## Template strings (ES6)
+## Template strings (ES6)  🔥
 
 Template literals são literais string que permitem expressões embutidas. Você pode usar string multi-linhas e interpolação de string com elas. Elas eram chamadas **"template strings"** nas versões anteriores à especificação ES2015.
 
@@ -71,7 +71,7 @@ console.log(` Seu nome é ${name} e Você tem ${printAge(age)}`); // Seu nome é
 export const logTemplateString = () => console.log(` Seu nome é ${name} e Você tem ${printAge(age)}`);
 ```
 
-## Rest parameters (ES6)
+## Rest parameters (ES6)  🔥
 
 A sintaxe de rest parameter  **(parâmetros rest)**  nos permite representar um número indefinido de argumentos como um array.
 
