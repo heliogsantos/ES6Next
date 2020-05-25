@@ -18,7 +18,7 @@ const numbers = [1,2,3,4,5,6];
 const biggerSix = numbers.map(item => item * 2).filter(item => item > 6);
 
 export const logArrowFunction = () => console.log(biggerSix) // [8, 10, 12];
-````
+```
 
 ## Destructuring
 
@@ -52,4 +52,21 @@ const logDestructuringArry = () => {
 }
 
 export { logDestructuringObject, logDestructuringArry }
-````
+```
+
+## Template strings
+
+Template literals são literais string que permitem expressões embutidas. Você pode usar string multi-linhas e interpolação de string com elas. Elas eram chamadas **"template strings"** nas versões anteriores à especificação ES2015.
+
+```javascript
+const name = 'Helio';
+const age = 29;
+
+const printAge = (param) => {
+    return `${param} anos!`;
+}
+
+console.log(` Seu nome é ${name} e Você tem ${printAge(age)}`); // Seu nome é Helio e Você tem: 29 anos!;
+
+export const logTemplateString = () => console.log(` Seu nome é ${name} e Você tem ${printAge(age)}`);
+```
