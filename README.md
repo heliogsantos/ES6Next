@@ -76,7 +76,7 @@ const sumNumbers = (...param) => console.log(param.length); // 6 🧐
 export const logRest = () => sumNumbers(numbers);
 ```
 
-## Spread operator 🔥
+## Spread operator (ES6) 🔥
 
 A sintaxe de propagação  **(Spread)** permite que um objeto iterável, como um array ou string, seja expandida em locais onde zero ou mais argumentos (para chamadas de função) ou elementos (para literais de array) sejam esperados ou uma expressão de objeto seja expandida em locais onde zero ou mais pares de chave-valor (para literais de objeto) são esperados.
 
@@ -88,4 +88,14 @@ const titleCss = { fontweight: 'bold', ...css };
 console.log(titleCss); // fontweight: "bold", fontSize: 13, color: "#FFF" 🧐
 
 export const logSpread = () => console.log(titleCss);
+```
+
+## Default Parameters (ES6) 🔥
+
+Os parâmetros predefinidos de uma função permitem que parâmetros regulares sejam inicializados com com valores iniciais caso undefined ou nenhum valor seja passado.
+
+```javascript
+const sumNumbers = (numberOne, numbertwo = 10) => numberOne + numbertwo;
+
+export const logParameters = () => console.log(sumNumbers(20)); // 30 🧐
 ```
