@@ -71,7 +71,7 @@ console.log(` Seu nome é ${name} e Você tem ${printAge(age)}`); // Seu nome é
 export const logTemplateString = () => console.log(` Seu nome é ${name} e Você tem ${printAge(age)}`);
 ```
 
-### Rest parameters (ES6)
+## Rest parameters (ES6)
 
 A sintaxe de rest parameter  **(parâmetros rest)**  nos permite representar um número indefinido de argumentos como um array.
 
