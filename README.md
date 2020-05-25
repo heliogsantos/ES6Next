@@ -17,7 +17,9 @@ const numbers = [1,2,3,4,5,6];
 
 const biggerSix = numbers.map(item => item * 2).filter(item => item > 6);
 
-export const logArrowFunction = () => console.log(biggerSix); // [8, 10, 12] 🧐
+console.log(biggerSix); // [8, 10, 12] 🧐
+
+export const logArrowFunction = () => console.log(biggerSix);
 ```
 
 ## Destructuring (ES6) 🔥
@@ -35,16 +37,13 @@ const address = {
 }
 const { street, number, uf_address: { uf } } = address;
 
-const logDestructuringObject = () => {
-    console.log(street, number, uf); // Boa Vista 301 SP 🧐
-}
+const logDestructuringObject = () => console.log(street, number, uf); // Boa Vista 301 SP 🧐
+
 
 const numbers = [1,2,3];
 const [ one, two, three ] = numbers;
 
-const logDestructuringArry = () => {
-    console.log(one, two, three); // 1 2 3 🧐
-}
+const logDestructuringArry = () => console.log(one, two, three); // 1 2 3 🧐
 
 export { logDestructuringObject, logDestructuringArry }
 ```
@@ -57,9 +56,7 @@ Template literals são literais string que permitem expressões embutidas. Você
 const name = 'Helio';
 const age = 29;
 
-const printAge = (param) => {
-    return `${param} anos!`;
-}
+const printAge = (param) => `${param} anos!`;
 
 console.log(` Seu nome é ${name} e Você tem ${printAge(age)}`); // Seu nome é Helio e Você tem: 29 anos! 🧐
 
