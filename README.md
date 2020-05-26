@@ -133,7 +133,7 @@ export const logLet = () => console.log(age); // 29 🧐
 
 ## Map (ES6) 🔥
 
-O método map() invoca a função callback passada por argumento para cada elemento do Array e devolve um novo Array como resultado.
+O método **map()** invoca a função callback passada por argumento para cada elemento do Array e devolve um novo Array como resultado.
 
 O código a seguir mostrar como o método **(map)** funciona quando a função callback possui apenas um argumento. Esse argumento será automaticamente atribuído para cada elemento do array conforme o **(map)** itera sobre o array original.
 
