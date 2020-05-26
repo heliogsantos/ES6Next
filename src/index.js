@@ -6,6 +6,7 @@ import { logSpread } from './spread/index';
 import { logParameters } from './default-parameters/index';
 import { logConst } from './const/index';
 import { logLet } from './let/index';
+import { logMap } from './map/index';
 
 logArrowFunction();
 logDestructuringObject();
@@ -16,3 +17,4 @@ logSpread();
 logParameters();
 logConst();
 logLet();
+logMap();
