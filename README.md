@@ -166,7 +166,7 @@ O exemplo a seguir usa o **filter()** para criar um array filtrado em que todos 
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 30, 40, 100, 300];
 
-const biggerThirty = numbers.filter(item => item >= 30);
+const biggerThirty = numbers.filter(item => item > 30);
 
-export const logFilter = () => console.log(biggerThirty); // [30, 40, 100, 300] 🧐
+export const logFilter = () => console.log(biggerThirty); // [40, 100, 300] 🧐
 ```
