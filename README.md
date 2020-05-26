@@ -102,7 +102,7 @@ export const logParameters = () => console.log(sumNumbers(20)); // 30 🧐
 
 ## Const (ES6) 🔥
 
-A  declaração const cria uma variável cujo o valor é fixo, ou seja, uma constante somente leitura. Isso não significa que o valor é imutável, apenas que a variável constante não pode ser alterada ou retribuída.
+A  declaração **(const)** cria uma variável cujo o valor é fixo, ou seja, uma constante somente leitura. Isso não significa que o valor é imutável, apenas que a variável constante não pode ser alterada ou retribuída.
 
 ```javascript
 const name = "Helio";
