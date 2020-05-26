@@ -104,6 +104,14 @@ export const logParameters = () => console.log(sumNumbers(20)); // 30 🧐
 
 A  declaração **(const)** cria uma variável cujo o valor é fixo, ou seja, uma constante somente leitura. Isso não significa que o valor é imutável, apenas que a variável constante não pode ser alterada ou retribuída.
 
+Esta declaração cria uma constante que pode pertencer tanto ao escopo global (na janela ou objeto) quanto ao local do bloco em que é declarada. Constantes globais não se tornam propriedades do objeto window, diferente da criação de variáveis com var. Toda constante requer um inicializador, ou seja, é preciso especificar um valor para a constante no momento em que ela é declarada (o que faz sentido, uma vez que esse valor não pode ser alterado).
+
+A declaração **(const)** cria uma referência somente leitura a um valor. Isso não significa que esse valor é imutável, apenas que o identificador da variável constante não pode ser alterado. Se o conteúdo do identificador for um objeto, isso significa que o conteúdo do objeto (ex. seus parâmetros) podem ser alterados.
+
+Todas as considerações de "temporal dead zone" se aplicam tanto a let quanto a **(const)**.
+
+Uma constante não pode ter o mesmo nome que uma função ou variável que esteja no mesmo escopo.
+
 ```javascript
 const name = "Helio";
 
