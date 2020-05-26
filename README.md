@@ -155,9 +155,11 @@ filter() chama a função callback fornecida, uma vez para cada elemento do arra
 
 callback é invocado com estes três argumentos:
 
-##### ⚠️ o valor do elemento
-##### ⚠️ o índice do elemento
-##### ⚠️ o objeto do array a ser preenchido
+<ul style="list-style:none;">
+  <li style="color:black;background-color:#f6dc27;width:300px;font-weight:bold;text-align:center">o valor do elemento</li><br>
+  <li style="color:black;background-color:#f6dc27;width:300px;font-weight:bold;text-align:center">o índice do elemento</li><br>
+  <li style="color:black;background-color:#f6dc27;width:300px;font-weight:bold;text-align:center">o objeto do array a ser preenchido</li><br>
+</ul>
 
 **filter()** não altera o array a partir da qual foi invocado.
 
