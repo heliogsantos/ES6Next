@@ -155,9 +155,9 @@ filter() chama a função callback fornecida, uma vez para cada elemento do arra
 
 callback é invocado com estes três argumentos:
 
-#### o valor do elemento
-#### o índice do elemento
-#### o objeto do array a ser preenchido
+#### ⚠️ o valor do elemento
+#### ⚠️ o índice do elemento
+#### ⚠️ o objeto do array a ser preenchido
 
 **filter()** não altera o array a partir da qual foi invocado.
 
