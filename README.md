@@ -146,3 +146,27 @@ const doubles = numbers.map(item => item * 2);
 
 export const logMap = () => console.log(doubles); // [2, 8, 18] 🧐
 ```
+
+## Filter (ES6) 🔥
+
+O método **filter()** cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+
+filter() chama a função callback fornecida, uma vez para cada elemento do array, e constrói um novo array com todos os valores para os quais o callback retornou o valor true ou  um valor que seja convertido para true. O callback é chamado apenas para índices do array que possuem valores atribuídos; Ele não é invocado para índices que foram excluídos ou para aqueles que não tiveram valor atribuído. Elementos do array que não passaram no teste do callback são simplesmente ignorados, e não são incluídos no novo array.
+
+callback é invocado com estes três argumentos:
+
+#### o valor do elemento
+#### o índice do elemento
+#### o objeto do array a ser preenchido
+
+**filter()** não altera o array a partir da qual foi invocado.
+
+O exemplo a seguir usa o **filter()** para criar um array filtrado em que todos os elementos com valores menores que 30 são removidos.
+
+```javascript
+const numbers = [1, 2, 3, 4, 5, 30, 40, 100, 300];
+
+const biggerThirty = numbers.filter(item => item >= 30);
+
+export const logFilter = () => console.log(biggerThirty); // [30, 40, 100, 300] 🧐
+```

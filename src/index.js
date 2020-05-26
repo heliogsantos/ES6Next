@@ -7,6 +7,7 @@ import { logParameters } from './default-parameters/index';
 import { logConst } from './const/index';
 import { logLet } from './let/index';
 import { logMap } from './map/index';
+import { logFilter } from './filter/index';
 
 logArrowFunction();
 logDestructuringObject();
@@ -18,3 +19,4 @@ logParameters();
 logConst();
 logLet();
 logMap();
+logFilter();
