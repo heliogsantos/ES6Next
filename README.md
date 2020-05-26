@@ -99,3 +99,26 @@ const sumNumbers = (numberOne, numbertwo = 10) => numberOne + numbertwo;
 
 export const logParameters = () => console.log(sumNumbers(20)); // 30 🧐
 ```
+
+## Const (ES6) 🔥
+
+A  declaração const cria uma variável cujo o valor é fixo, ou seja, uma constante somente leitura. Isso não significa que o valor é imutável, apenas que a variável constante não pode ser alterada ou retribuída.
+
+```javascript
+const name = "Helio";
+
+export const logConst = () => console.log(name); // Helio 🧐
+```
+
+## Let (ES6) 🔥
+
+Declara uma variável local no escopo do bloco atual, opcionalmente iniciando-a com um valor.
+
+**(let)** permite que você declare variáveis limitando seu escopo no bloco, instrução, ou em uma expressão na qual ela é usada. Isso é inverso da keyword var, que define uma variável globalmente ou no escopo inteiro de uma função, independentemente do escopo de bloco.
+
+
+```javascript
+let age = 29;
+
+export const logLet = () => console.log(age); // 29 🧐
+```
